@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/appointment-planner/static/js/main.ed6f265b.js",
+    "main.js": "/appointment-planner/static/js/main.ffc2d949.js",
     "index.html": "/appointment-planner/index.html",
-    "main.ed6f265b.js.map": "/appointment-planner/static/js/main.ed6f265b.js.map"
+    "main.ffc2d949.js.map": "/appointment-planner/static/js/main.ffc2d949.js.map"
   },
   "entrypoints": [
-    "static/js/main.ed6f265b.js"
+    "static/js/main.ffc2d949.js"
   ]
 }
