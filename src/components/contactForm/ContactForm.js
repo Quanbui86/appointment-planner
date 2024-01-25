@@ -29,22 +29,25 @@ export const ContactForm = ({
             value={contactForm.name}
             onChange={handleChange}
             placeholder="Name"
-            required />
+            required
+          />
           <input
             type="text"
             name='phone'
             pattern="^\d{4}-\d{3}-\d{3}$"
             value={contactForm.phone}
             onChange={handleChange}
-            placeholder="Phone"
-            required />
+            placeholder="Phone xxxx-xxx-xxx"
+            required
+          />
           <input
             type="text"
             name='email'
             value={contactForm.email}
             onChange={handleChange}
             placeholder="Email"
-            required />
+            required
+          />
           <input type="submit" />
         </form>
       </div>

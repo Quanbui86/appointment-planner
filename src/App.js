@@ -23,9 +23,9 @@ function App() {
   }
   console.log(contacts)
   console.log(appointments)
+  //<Route index element={<Navigate to={ROUTES.CONTACTS} replace />} />
   const router = createBrowserRouter(createRoutesFromElements(
     <Route path="/appointment-planner" element={<Root />}>
-      <Route index element={<Navigate to={ROUTES.CONTACTS} replace />} />
       <Route path={ROUTES.CONTACTS} element={
         <ContactsPage
           contacts={contacts}

@@ -10,7 +10,7 @@ export const ContactPicker = ({ handleChange, contacts, appointmentForm }) => {
         value={appointmentForm.name}
         required
       >
-        <option value=''>Choose contact</option>
+        <option value=''>No Contact Selected</option>
         {contacts.map((contact, index) => <option key={index}>{contact.name}</option>)}
       </select>
     </>
