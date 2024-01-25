@@ -1,25 +1,24 @@
 import React from "react";
 
 export const ContactForm = ({
-  form,
+  contactForm,
   name,
   setName,
   phone,
   setPhone,
   email,
   setEmail,
-  setForm,
+  setContactForm,
   handleSubmit
 }) => {
   const handleChange = (e) => {
-    setForm({
-      ...form,
+    setContactForm({
+      ...contactForm,
       [e.target.name]: e.target.value
     }
     )
     console.log(e.target.name)
   }
-  console.log(form)
   return (
     <>
       <div>
@@ -27,21 +26,22 @@ export const ContactForm = ({
           <input
             type="text"
             name='name'
-            value={form.name}
+            value={contactForm.name}
             onChange={handleChange}
             placeholder="Name"
             required />
           <input
             type="text"
             name='phone'
-            value={form.phone}
+            pattern="^\d{4}-\d{3}-\d{3}$"
+            value={contactForm.phone}
             onChange={handleChange}
             placeholder="Phone"
             required />
           <input
             type="text"
             name='email'
-            value={form.email}
+            value={contactForm.email}
             onChange={handleChange}
             placeholder="Email"
             required />
